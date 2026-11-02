@@ -5,7 +5,9 @@
 
 # TODO: Make a function that takes two numbers as input and returns the sum of those numbers.
 
-def add_numbers():
-    ...
+def add_numbers(number1, number2):
+    result = number1 + number2
+    return result
     
 # TODO: Call the function with 2 and 3 and print the result.
+print(add_numbers(2, 3))

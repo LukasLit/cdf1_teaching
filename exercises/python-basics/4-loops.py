@@ -8,7 +8,9 @@
 
 break_condition = 0
 
-...
+while break_condition < 9:
+    print(break_condition)
+    break_condition += 1
 
 print("out of while loop")
 
@@ -22,4 +24,16 @@ print("out of while loop")
 
 pets = ["dog", "cat", "horse", "rabbit", "snake"]
 
-print(pet)
+for pet in pets:
+    print(pet)
+
+# Create a list containing the numbers 0 through 4.
+numbers = list(range(5))
+for number in numbers:
+    print(number)
+
+# A nested loop is a loop inside another loop. For each row, the inner loop
+# visits every column, so this prints all six row-column pairs.
+for row in range(3):
+    for column in range(2):
+        print(f"row={row}, column={column}")
